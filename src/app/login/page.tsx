@@ -6,8 +6,8 @@ export default function Login() {
     <div>
       <img src={"png/logoNoBackground.png"} alt="Cinet Logo" width={'300px'}/>
       <p>Login</p>
-      <p>Melde dich an, um fortzufahren.</p>
-      <Link href={""}>Noch kein Account?</Link>
+      <p>Melde dich an, um fortzufahren. <Link href={"/addAccount"}>Noch kein Account?</Link></p>
+      
       <div>
         <Form.Label>E-MAIL</Form.Label>
         <Form.Control type="email" />

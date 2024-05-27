@@ -1,10 +1,8 @@
 'use client'
 
 import { useState } from 'react';
-import style from './page.module.css'
-import { IconMenu2 } from '@tabler/icons-react';
-import Link from 'next/link';
 import Card from './components/Card';
+import BurgerMenu from './burgermenu/page'
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false)
@@ -16,16 +14,8 @@ export default function Home() {
   return (
     <div>
       <div>
-        <div id={style.burgerMenu} >
-          <IconMenu2 stroke={2} onClick={toggleMenu} />
-
-          { open &&
-            <div>
-              <Link href={"/login"}>Anmelden</Link>
-              <Link href={"/addAccount"}>Registrieren</Link>
-            </div>
-          }
-        </div>
+        <BurgerMenu></BurgerMenu>
+        
         <p>HOME</p>
 
         <Card title='Spiel des Tages' imagePath='svg/logoNoBackground.svg' />

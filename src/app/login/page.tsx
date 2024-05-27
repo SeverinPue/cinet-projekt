@@ -17,7 +17,6 @@ export default function Login() {
 
         <Button variant="dark" className="mt-2">anmelden</Button>
       </div>
-      <Link href={"/addAccount"}>Noch kein Account?</Link>
     </div>
   );
 }

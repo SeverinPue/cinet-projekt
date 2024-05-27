@@ -8,11 +8,11 @@ Als erstes haben wir den Auftrag auf Teams durchgelesen und Fragen geklärt. Ans
 **Remo** - React-Bootstrap, Grundform der Webseite
 
 ### Zeitplan\
-**Datum (bis)	Beschreibung**
-- 06.05.2024	1. Schritte I, P und E dokumentieren 2. Mit Login beginnen\
-- 13.05.2024\
-- 27.05.2024\
-- 03.06.2024
+**Datum (bis)**
+- 06.05.2024	Schritte I, P und E dokumentieren 
+- 13.05.2024    Login, Account erstellen
+- 27.05.2024    Home, Burgermenu, Punkte einlösen, Profil, Bootstrap
+- 03.06.2024    Spiele, Dokumentation
 
 # Entscheiden
 

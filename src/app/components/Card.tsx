@@ -10,7 +10,7 @@ type CardType = {
 export default function Card(props: CardType) {
   return (
     <div id={style.outter}>
-      <p>{props.title}</p>
+      <p id={style.title}>{props.title}</p>
       {props.imagePath && (
         <img src={props.imagePath} alt="Spiel Icon" width={"300px"} />
       )}

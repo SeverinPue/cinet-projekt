@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import style from '../page.module.css'
+import stylePoints from './Points.module.css'
 import { IconMenu2 } from '@tabler/icons-react';
-import Link from 'next/link';
 import Card from '../components/Card';
 
 export default function Points() {
@@ -23,7 +23,7 @@ export default function Points() {
          <p></p>
           }
         </div>
-        <p>Punkte Einlösen</p>
+        <p id={stylePoints.title}>Punkte Einlösen</p>
 
         <Card title='Popcorn Gutschein' points='100' footer='Punkte' />
         <Card title='Kino Gutschein' points='500' footer='Punkte'/>

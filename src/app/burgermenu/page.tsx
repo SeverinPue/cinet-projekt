@@ -1,5 +1,9 @@
-import { IconMenu2 } from "@tabler/icons-react";
-import { useState } from "react";
+'use client'
+
+import { useState } from 'react';
+import style from './page.module.css'
+import { IconMenu2 } from '@tabler/icons-react';
+import Link from 'next/link';
 
 export default function burgermenu() {
 

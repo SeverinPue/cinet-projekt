@@ -15,7 +15,7 @@ export default function Login() {
         <Form.Label>PASSWORD</Form.Label>
         <Form.Control type="password" />
 
-        <Button variant="dark">anmelden</Button>
+        <Button variant="dark" className="mt-2">anmelden</Button>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Card from './components/Card';
 import BurgerMenu from './burgermenu/page'
+import Coins from './components/Coins';
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false)
@@ -17,6 +18,8 @@ export default function Home() {
         <BurgerMenu></BurgerMenu>
         
         <p>HOME</p>
+
+        <Coins></Coins>
 
         <Card title='Spiel des Tages' imagePath='svg/logoNoBackground.svg' />
         <Card title='Beliebte Spiele' imagePath='svg/logoNoBackground.svg' />

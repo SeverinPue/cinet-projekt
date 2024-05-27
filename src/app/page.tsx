@@ -30,7 +30,7 @@ export default function Home() {
 
         <Card title='Spiel des Tages' imagePath='svg/logoNoBackground.svg' />
         <Card title='Beliebte Spiele' imagePath='svg/logoNoBackground.svg' />
-        <Card title='Punkte einlösen' imagePath='svg/logoNoBackground.svg' />
+        <Card title='Punkte einlösen' imagePath='png/cinet_coin.png'/>
         <Card title='So funktioniert Cinet' imagePath='svg/logoNoBackground.svg' />
       </div>
     </div>

@@ -9,7 +9,7 @@ export default function Card(props: CardType) {
   return (
     <div id={style.outter}>
       <p>{props.title}</p>
-      <img src={props.imagePath} alt="Spiel Icon" width={'300px'} />
+      <img src={props.imagePath} alt="Spiel Icon" id={style.image} width="200px" />
     </div>
   );
 }

@@ -2,13 +2,17 @@
 Als erstes haben wir den Auftrag auf Teams durchgelesen und Fragen geklärt. Anschliessend haben wir die uns zur Verfügung gestellten Unterlagen von der Cinet Gruppe angeschaut. Sprich den Styleguide
 
 # Planen
+### Aufteilung
+**Livio** - Leitung, Logik, Bootstrap\
+**Severin** - Vizeleitung, Grundform der Webseite\
+**Remo** - React-Bootstrap, Grundform der Webseite
 
-Zeitplan\
-Datum (bis)	Beschreibung\
-06.05.2024	1. Schritte I, P und E dokumentieren 2. Mit Login beginnen\
-13.05.2024\
-27.05.2024\
-03.06.2024
+### Zeitplan\
+**Datum (bis)	Beschreibung**
+- 06.05.2024	1. Schritte I, P und E dokumentieren 2. Mit Login beginnen\
+- 13.05.2024\
+- 27.05.2024\
+- 03.06.2024
 
 # Entscheiden
 

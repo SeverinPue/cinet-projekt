@@ -1,0 +1,10 @@
+#outter {
+    border: black 2px solid;
+    border-radius: 7px;
+    padding: 2rem;
+    margin: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -3,10 +3,10 @@ import { Button, Form } from "react-bootstrap";
 
 export default function Login() {
   return (
-    <div className="d-flex justify-content-center flex-row">
-      <img src={"png/logoNoBackground.png"} alt="Cinet Logo" width={"300px"}/>
-      <h1>Login</h1>
-      <p>Melde dich an, um fortzufahren.</p>
+    <div>
+      <img src={"png/logoNoBackground.png"} alt="Cinet Logo" width={'300px'}/>
+      <p>Login</p>
+      <p>Melde dich an, um fortzufahren. <Link href={"/addAccount"}>Noch kein Account?</Link></p>
       
       <div>
         <Form.Label>E-MAIL</Form.Label>

@@ -13,7 +13,12 @@ export default function Points() {
     setOpen(!open);
   }
 
-  function clickhandler() {}
+  function clickhandler() {
+
+    let points = localStorage.getItem("points")
+    let pointsString = "" + (points + 50);
+    localStorage.setItem("points", pointsString);
+  }
 
   return (
     <div className="w-75 m-5">

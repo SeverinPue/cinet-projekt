@@ -6,8 +6,9 @@ import BurgerMenu from "./burgermenu/page";
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
-  const [points, setPoints] = useState(200);
+  const [points, setPoints] = useState(0);
 
+  localStorage.setItem("points", 0)
   function toggleMenu() {
     setOpen(!open);
   }

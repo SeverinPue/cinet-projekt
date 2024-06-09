@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import BurgerMenu from "./burgermenu/page";
-import { stringify } from "querystring";
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);

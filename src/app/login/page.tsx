@@ -3,10 +3,10 @@ import { Button, Form } from "react-bootstrap";
 
 export default function Login() {
   return (
-    <div>
+    <div className="mt-3">
       <img src={"png/logoNoBackground.png"} alt="Cinet Logo" width={'300px'}/>
-      <p>Login</p>
-      <p>Melde dich an, um fortzufahren. <Link href={"/addAccount"}>Noch kein Account?</Link></p>
+      <p className="fs-4 mt-4 fw-bold">Login</p>
+      <p className="fw-light">Melde dich an, um fortzufahren. <Link href={"/addAccount"}>Noch kein Account?</Link></p>
       
       <div>
         <Form.Label>E-MAIL</Form.Label>
@@ -15,7 +15,7 @@ export default function Login() {
         <Form.Label>PASSWORD</Form.Label>
         <Form.Control type="password" />
 
-        <Button variant="dark" className="mt-2">anmelden</Button>
+        <Button variant="dark" className="w-100 mt-2">anmelden</Button>
       </div>
     </div>
   );

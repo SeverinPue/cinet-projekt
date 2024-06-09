@@ -4,6 +4,7 @@ import { useState } from "react";
 import style from "../page.module.css";
 import { IconMenu2 } from "@tabler/icons-react";
 import Card from "../components/Card";
+import BurgerMenu from "../burgermenu/page";
 
 export default function Points() {
   const [open, setOpen] = useState<boolean>(false);
@@ -12,45 +13,53 @@ export default function Points() {
     setOpen(!open);
   }
 
-  function clickhandler() {
-
-    
-  }
+  function clickhandler() {}
 
   return (
-    <div>
-      <div>
-        <div id={style.burgerMenu}>
-          <IconMenu2 stroke={2} onClick={toggleMenu} />
+    <div className="w-75 m-5">
+      <BurgerMenu></BurgerMenu>
 
-          {open && <p></p>}
-        </div>
-        <p>Games</p>
+      <p className="text-center fs-1 fw-bold">Games</p>
 
-        <a onClick={clickhandler} href="https://g.co/kgs/dyPrbKY">
-          <Card title="Pacman" imagePath="png/pagman.jpeg" footer="Spielen" />
-        </a>
-        <a onClick={clickhandler} href="https://g.co/kgs/EshPce7">
-          {" "}
-          <Card
-            title="Minesweeper"
-            imagePath="png/minesweeper.png"
-            footer="Spielen"
-          />
-        </a>
-        <a onClick={clickhandler} href="https://www.gamesbasis.com/games/classic/tetris/">
-          {" "}
-          <Card title="Tetris" imagePath="png/tetris.avif" footer="Spielen" />
-        </a>
-        <a onClick={clickhandler} href="https://supermario-game.com/de">
-          {" "}
-          <Card
-            title="Super Mario"
-            imagePath="png/super_mario.jpg"
-            footer="Spielen"
-          />
-        </a>
-      </div>
+      <a
+        className="text-decoration-none"
+        onClick={clickhandler}
+        href="https://g.co/kgs/dyPrbKY"
+      >
+        <Card title="Pacman" imagePath="png/pagman.jpeg" footer="Spielen" />
+      </a>
+      <a
+        className="text-decoration-none"
+        onClick={clickhandler}
+        href="https://g.co/kgs/EshPce7"
+      >
+        {" "}
+        <Card
+          title="Minesweeper"
+          imagePath="png/minesweeper.png"
+          footer="Spielen"
+        />
+      </a>
+      <a
+        className="text-decoration-none"
+        onClick={clickhandler}
+        href="https://www.gamesbasis.com/games/classic/tetris/"
+      >
+        {" "}
+        <Card title="Tetris" imagePath="png/tetris.avif" footer="Spielen" />
+      </a>
+      <a
+        className="text-decoration-none"
+        onClick={clickhandler}
+        href="https://supermario-game.com/de"
+      >
+        {" "}
+        <Card
+          title="Super Mario"
+          imagePath="png/super_mario.jpg"
+          footer="Spielen"
+        />
+      </a>
     </div>
   );
 }

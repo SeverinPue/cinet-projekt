@@ -5,6 +5,7 @@ type CardType = {
   imagePath?: string;
   points?: string;
   footer?: string;
+  image?: string;
 };
 
 export default function Card(props: CardType) {

@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import BurgerMenu from "../burgermenu/page";
-import { createContext, use, useState } from "react";
+import { createContext, use, useEffect, useState } from "react";
 
 type PersonalDetails = {
     name: String,
@@ -12,7 +12,7 @@ type PersonalDetails = {
 
 
 export default function Profile(){
-    const [points, setPoints] = useState<number>(200);
+    const [points, setPoints] = useState<string | null>();
     const [personalDetails, setPersonalDetails] = useState<PersonalDetails>(
         {name: "livio",
         email: "livio.thommen@axa.ch",
@@ -23,6 +23,8 @@ export default function Profile(){
             return date.getDay+"."+date.getMonth+"."+date.getFullYear;
         }
 
+        setPoints(localStorage.getItem("points"))
+        console.log(points)
 
     return(
         <div>

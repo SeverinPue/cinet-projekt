@@ -1,21 +1,28 @@
 #outter {
-    border: black 2px solid;
-    border-radius: 7px;
-    padding: 2rem;
-    margin: 1rem;
-    min-width: 375px;
-    padding-bottom: 1rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    overflow: hidden;
+    margin: 3rem;
+    text-align: center;
+    border-radius: 1rem;
 }
 
- #title{
+#text {
+    color: white;
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+    box-shadow: 0 -5px 16px rgb(58, 58, 58);
+}
+
+#image {
+    height: 300px;
+    width: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+#title {
     font-size: 1.75rem;
     font-weight: 600;
- }
+}

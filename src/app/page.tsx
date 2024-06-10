@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import BurgerMenu from "./burgermenu/page";
+import { Col, Container, Row } from "react-bootstrap";
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
@@ -16,8 +17,8 @@ export default function Home() {
   }
   const [points, setPoints] = useState(pointsInt);
 
-  localStorage.setItem("points", points + "")
-  
+  localStorage.setItem("points", points + "");
+
   function toggleMenu() {
     setOpen(!open);
   }
@@ -29,7 +30,7 @@ export default function Home() {
   }
 
   return (
-    <div className="container m-5">
+    <div className="container m-5 d-flex flex-column align-items-center">
       <div>
         <BurgerMenu></BurgerMenu>
         <p className="display-1 text-center mt-5 fw-bold">HOME</p>
@@ -40,22 +41,73 @@ export default function Home() {
           <p>{points}</p>
         </div>
 
-        <Card title="Spiel des Tages" imagePath="svg/logoNoBackground.svg" />
-        <Card title="Beliebte Spiele" imagePath="svg/logoNoBackground.svg" />
-        <Card
-          title="So funktioniert Cinet"
-          imagePath="svg/logoNoBackground.svg"
-        />
+        <Container className="d-flex flex-column align-items-center">
+          <Row>
+            <Col>
+              <Card
+                title="Spiel des Tages"
+                imagePath="svg/logoNoBackground.svg"
+              />
+            </Col>
+            <Col>
+              <Card
+                title="Beliebte Spiele"
+                imagePath="svg/logoNoBackground.svg"
+              />
+            </Col>
+          </Row>
+          <Row >
+            <Col>
+              <Card
+                title="So funktioniert Cinet"
+                imagePath="svg/logoNoBackground.svg"
+              />
+            </Col>
+          </Row>
+        </Container>
       </div>
 
-      <div className="pt-3">
+      <div className="pt-3 container">
         <p className="fs-2 mt-5 text-center fw-bold">Punkte Einlösen</p>
 
-
-        <Card imagePath='generalImages/popcorn.jpg' title="Popcorn Gutschein" points="100" footer="Punkte" />
-        <Card imagePath="generalImages/gutschein.jpg" title="Kino Gutschein" points="500" footer="Punkte" />
-        <Card imagePath="generalImages/getraenk.jpg" title="Getränk" points="70" footer="Punkte" />
-        <Card imagePath="generalImages/popcorn2.jpg" title="Snack nach Wahl" points="150" footer="Punkte" />
+        <Container>
+          <Row>
+            <Col>
+              <Card
+                imagePath="generalImages/popcorn.jpg"
+                title="Popcorn Gutschein"
+                points="100"
+                footer="Punkte"
+              />
+            </Col>
+            <Col>
+              <Card
+                imagePath="generalImages/gutschein.jpg"
+                title="Kino Gutschein"
+                points="500"
+                footer="Punkte"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Card
+                imagePath="generalImages/getraenk.jpg"
+                title="Getränk"
+                points="70"
+                footer="Punkte"
+              />
+            </Col>
+            <Col>
+              <Card
+                imagePath="generalImages/popcorn2.jpg"
+                title="Snack nach Wahl"
+                points="150"
+                footer="Punkte"
+              />
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export default function AddAccount() {
           <Form.Label htmlFor="datepicker">Geburtstag</Form.Label>
           <DatePicker id="datepicker" />
         </div>
-        <Button variant="dark" type="submit" className="w-100 mt-2">
+        <Button href="/" variant="dark" type="submit" className="w-100 mt-2">
           Registrieren
         </Button>
       </Form>

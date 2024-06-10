@@ -27,7 +27,7 @@ export default function Points() {
     <div className="m-5 container">
       <BurgerMenu></BurgerMenu>
 
-      <p className="display-1 text-center mt-5 fw-bold">Games</p>
+      <p className="text-center fs-1 fw-bold">Games</p>
 
       <Container>
         <Row>
@@ -39,7 +39,7 @@ export default function Points() {
             >
               <Card
                 title="Pacman"
-                imagePath="png/pagman.jpeg"
+                imagePath="generalImages/pagman.jpeg"
                 footer="Spielen"
               />
             </a>
@@ -53,7 +53,7 @@ export default function Points() {
               {" "}
               <Card
                 title="Minesweeper"
-                imagePath="png/minesweeper.png"
+                imagePath="generalImages/minesweeper.png"
                 footer="Spielen"
               />
             </a>
@@ -69,7 +69,7 @@ export default function Points() {
               {" "}
               <Card
                 title="Tetris"
-                imagePath="png/tetris.avif"
+                imagePath="generalImages/tetris.avif"
                 footer="Spielen"
               />
             </a>
@@ -83,7 +83,7 @@ export default function Points() {
               {" "}
               <Card
                 title="Super Mario"
-                imagePath="png/super_mario.jpg"
+                imagePath="generalImages/super_mario.jpg"
                 footer="Spielen"
               />
             </a>

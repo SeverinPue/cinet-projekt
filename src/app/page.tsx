@@ -46,13 +46,13 @@ export default function Home() {
             <Col>
               <Card
                 title="Spiel des Tages"
-                imagePath="svg/logoNoBackground.svg"
+                imagePath="generalImages/spiel_des_tages.png"
               />
             </Col>
             <Col>
               <Card
                 title="Beliebte Spiele"
-                imagePath="svg/logoNoBackground.svg"
+                imagePath="generalImages/belibte_spiele.jpg"
               />
             </Col>
           </Row>
@@ -60,7 +60,7 @@ export default function Home() {
             <Col>
               <Card
                 title="So funktioniert Cinet"
-                imagePath="svg/logoNoBackground.svg"
+                imagePath="generalImages/so_funktioniert_cinet.jpeg"
               />
             </Col>
           </Row>

@@ -11,7 +11,15 @@ type PersonalDetails = {
 };
 
 export default function Profile() {
-  const [points, setPoints] = useState<string | null>();
+  let pointsOrNull = localStorage.getItem("points");
+  let pointsInt;
+  if (pointsOrNull == null) {
+    pointsInt = 200;
+  } else {
+    pointsInt = parseInt(pointsOrNull);
+  }
+  const [points, setPoints] = useState(pointsInt);
+
   const [personalDetails, setPersonalDetails] = useState<PersonalDetails>({
     name: "livio",
     email: "livio.thommen@axa.ch",
@@ -29,7 +37,7 @@ export default function Profile() {
 
       <p className="fs-1 text-center fw-bold">Profil</p>
       <p className="text-center">
-        Du hast <strong>200</strong> Punkte.
+        Du hast <strong>{points}</strong> Punkte.
       </p>
 
       <div className="d-flex justify-content-center">

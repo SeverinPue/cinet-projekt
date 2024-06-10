@@ -3,7 +3,7 @@ import { Button, Form } from "react-bootstrap";
 
 export default function Login() {
   return (
-    <div className="mt-3">
+    <div className="mt-3 container">
       <img src={"png/logoNoBackground.png"} alt="Cinet Logo" width={'300px'}/>
       <p className="fs-4 mt-4 fw-bold">Login</p>
       <p className="fw-light">Melde dich an, um fortzufahren. <Link href={"/addAccount"}>Noch kein Account?</Link></p>

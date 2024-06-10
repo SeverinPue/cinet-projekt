@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import style from "../page.module.css";
-import { IconMenu2 } from "@tabler/icons-react";
 import Card from "../components/Card";
 import BurgerMenu from "../burgermenu/page";
 
@@ -16,7 +14,7 @@ export default function Points() {
   function clickhandler() {}
 
   return (
-    <div className="w-75 m-5">
+    <div className="m-5 container">
       <BurgerMenu></BurgerMenu>
 
       <p className="text-center fs-1 fw-bold">Games</p>

@@ -19,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <div className="w-75 container m-5">
+    <div className="container m-5">
       <div>
         <BurgerMenu></BurgerMenu>
         <p className="text-center fs-1 fw-bold">HOME</p>

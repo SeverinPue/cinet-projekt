@@ -24,7 +24,7 @@ export default function Profile() {
   }
 
   return (
-    <div className="w-75 container m-5">
+    <div className="container m-5">
       <BurgerMenu></BurgerMenu>
 
       <p className="fs-1 text-center fw-bold">Profil</p>

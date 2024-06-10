@@ -21,8 +21,8 @@ export default function Profile() {
   const [points, setPoints] = useState(pointsInt);
 
   const [personalDetails, setPersonalDetails] = useState<PersonalDetails>({
-    name: "livio",
-    email: "livio.thommen@axa.ch",
+    name: "Max Muster",
+    email: "example@example.ch",
     password: "*******",
     dateOfBirth: new Date("2008-01-27"),
   });

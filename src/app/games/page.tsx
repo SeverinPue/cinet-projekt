@@ -12,9 +12,13 @@ export default function Points() {
   }
 
   function clickhandler() {
+    let points: string | null = localStorage.getItem("points");
+    if (points == null) {
+      points = "200";
+    }
 
-    let points = localStorage.getItem("points")
-    let pointsString = "" + (points + 50);
+    let pointsNumber: Number = parseInt(points) + 50;
+    let pointsString = "" + pointsNumber;
     localStorage.setItem("points", pointsString);
   }
 

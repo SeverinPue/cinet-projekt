@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Button, Form } from "react-bootstrap";
 
 export default function Login() {
+
+
   return (
     <div className="mt-3 container">
       <img src={"png/logoNoBackground.png"} alt="Cinet Logo" width={'300px'}/>
@@ -15,7 +17,7 @@ export default function Login() {
         <Form.Label>PASSWORD</Form.Label>
         <Form.Control type="password" />
 
-        <Button variant="dark" className="w-100 mt-2">anmelden</Button>
+        <Button href="/" variant="dark" className="w-100 mt-2">anmelden</Button>
       </div>
     </div>
   );

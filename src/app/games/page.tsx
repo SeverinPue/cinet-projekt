@@ -8,19 +8,23 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Points() {
   const [open, setOpen] = useState<boolean>(false);
 
+  let pointsOrNull = localStorage.getItem("points");
+  let pointsInt;
+  if (pointsOrNull == null) {
+    pointsInt = 200;
+  } else {
+    pointsInt = parseInt(pointsOrNull);
+  }
+  const [points, setPoints] = useState(pointsInt);
+
   function toggleMenu() {
     setOpen(!open);
   }
 
-  function clickhandler() {
-    let points: string | null = localStorage.getItem("points");
-    if (points == null) {
-      points = "200";
-    }
-
-    let pointsNumber: Number = parseInt(points) + 50;
-    let pointsString = "" + pointsNumber;
+  function handleClick(value: number) {
+    let pointsString = "" + (points + value);
     localStorage.setItem("points", pointsString);
+    setPoints(points + value);
   }
 
   return (
@@ -28,13 +32,15 @@ export default function Points() {
       <BurgerMenu></BurgerMenu>
 
       <p className="text-center fs-1 fw-bold">Games</p>
+      <p className="text-center">Du hast <strong>{points}</strong> Punkte.</p>
 
       <Container>
         <Row>
           <Col>
             <a
+              target="_blank"
               className="text-decoration-none"
-              onClick={clickhandler}
+              onClick={() => handleClick(50)}
               href="https://g.co/kgs/dyPrbKY"
             >
               <Card
@@ -46,8 +52,9 @@ export default function Points() {
           </Col>
           <Col>
             <a
+              target="_blank"
               className="text-decoration-none"
-              onClick={clickhandler}
+              onClick={() => handleClick(50)}
               href="https://g.co/kgs/EshPce7"
             >
               {" "}
@@ -62,8 +69,9 @@ export default function Points() {
         <Row>
           <Col>
             <a
+              target="_blank"
               className="text-decoration-none"
-              onClick={clickhandler}
+              onClick={() => handleClick(50)}
               href="https://www.gamesbasis.com/games/classic/tetris/"
             >
               {" "}
@@ -76,8 +84,9 @@ export default function Points() {
           </Col>
           <Col>
             <a
+              target="_blank"
               className="text-decoration-none"
-              onClick={clickhandler}
+              onClick={() => handleClick(50)}
               href="https://supermario-game.com/de"
             >
               {" "}

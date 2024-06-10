@@ -29,17 +29,18 @@ export default function Home() {
     setPoints(points + value);
   }
 
+  function clickhandler() {
+    alert(
+      "Man kann mit Hilfe von Punkten, die man bei dieser Kino-Seite verdienen kann, " +
+        "verschiedene Sachen kaufen. Zum Beispiel können diese Punkte gegen Snacks oder Kino-Tickets eingetauscht werden."
+    );
+  }
+
   return (
     <div className="container m-5 d-flex flex-column align-items-center">
       <div>
         <BurgerMenu></BurgerMenu>
         <p className="display-1 text-center mt-5 fw-bold">HOME</p>
-
-        <div>
-          <button onClick={() => handleClick(1)}>+1 Coin</button>
-          <button onClick={() => handleClick(-1)}>-1 Coin</button>
-          <p>{points}</p>
-        </div>
 
         <Container className="d-flex flex-column align-items-center">
           <Row>
@@ -57,7 +58,7 @@ export default function Home() {
             </Col>
           </Row>
           <Row >
-            <Col>
+            <Col onClick={clickhandler}>
               <Card
                 title="So funktioniert Cinet"
                 imagePath="generalImages/so_funktioniert_cinet.jpeg"
@@ -69,10 +70,11 @@ export default function Home() {
 
       <div className="pt-3 container">
         <p className="fs-2 mt-5 text-center fw-bold">Punkte Einlösen</p>
-
+        <p className="text-center">Du hast <strong>{points}</strong> Punkte.</p>
+        
         <Container>
           <Row>
-            <Col>
+            <Col onClick={() => handleClick(-100)}>
               <Card
                 imagePath="generalImages/popcorn.jpg"
                 title="Popcorn Gutschein"
@@ -80,7 +82,7 @@ export default function Home() {
                 footer="Punkte"
               />
             </Col>
-            <Col>
+            <Col onClick={() => handleClick(-500)}>
               <Card
                 imagePath="generalImages/gutschein.jpg"
                 title="Kino Gutschein"
@@ -90,7 +92,7 @@ export default function Home() {
             </Col>
           </Row>
           <Row>
-            <Col>
+            <Col onClick={() => handleClick(-70)}>
               <Card
                 imagePath="generalImages/getraenk.jpg"
                 title="Getränk"
@@ -98,7 +100,7 @@ export default function Home() {
                 footer="Punkte"
               />
             </Col>
-            <Col>
+            <Col onClick={() => handleClick(-150)}>
               <Card
                 imagePath="generalImages/popcorn2.jpg"
                 title="Snack nach Wahl"

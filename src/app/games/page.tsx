@@ -12,7 +12,6 @@ export default function Points() {
   }
 
   function clickhandler() {
-
     let points = localStorage.getItem("points")
     let pointsString = "" + (points + 50);
     localStorage.setItem("points", pointsString);

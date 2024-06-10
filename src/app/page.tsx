@@ -23,7 +23,7 @@ export default function Home() {
     <div className="container m-5">
       <div>
         <BurgerMenu></BurgerMenu>
-        <p className="text-center fs-1 fw-bold">HOME</p>
+        <p className="display-1 text-center mt-5 fw-bold">HOME</p>
 
         <div>
           <button onClick={() => handleClick(1)}>+1 Coin</button>
@@ -42,7 +42,7 @@ export default function Home() {
       <div className="pt-3">
         <p className="fs-2 mt-5 text-center fw-bold">Punkte Einlösen</p>
 
-        <Card title="Popcorn Gutschein" points="100" footer="Punkte" />
+        <Card imagePath='generalImages/popcorn.jpg' title="Popcorn Gutschein" points="100" footer="Punkte" />
         <Card title="Kino Gutschein" points="500" footer="Punkte" />
         <Card title="Getränk" points="70" footer="Punkte" />
         <Card title="Snack nach Wahl" points="150" footer="Punkte" />

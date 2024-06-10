@@ -1,5 +1,0 @@
-1. Games Seite (Mit Punkte gewinnen) -- Severin
-2. Profil Seite fertig machen -- Livio
-3. evt. noch Bilder auf Home Seite -- Livio
-4. Allgemeine CSS Kleinigkeiten -- Remo
-5. Dokumentation -- Livio

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import BurgerMenu from "./burgermenu/page";
+import Link from "next/link";
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
@@ -40,8 +41,8 @@ export default function Home() {
           <p>{points}</p>
         </div>
 
-        <Card title="Spiel des Tages" imagePath="svg/logoNoBackground.svg" />
-        <Card title="Beliebte Spiele" imagePath="svg/logoNoBackground.svg" />
+        <Link href="https://g.co/kgs/kqspX5R"><Card title="Spiel des Tages" imagePath="svg/logoNoBackground.svg" /></Link>
+        <Link href="/games"><Card title="Beliebte Spiele" imagePath="svg/logoNoBackground.svg" /></Link>
         <Card
           title="So funktioniert Cinet"
           imagePath="svg/logoNoBackground.svg"
